@@ -97,6 +97,22 @@ async function extractTextFromPdf(pdfFile: File): Promise<string> {
     return text;
 }
 
+export async function getAccessToken(): Promise<string> {
+    const url = 'https://briefpulse-backend.onrender.com/access-token/';
+    const headers = {
+        'accept': 'application/json',
+    };
+
+    const response = await fetch(url, { method: 'GET', headers });
+
+    if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const data: string = await response.json();
+    return data;
+}
+
 export class UnsupportedFileError extends Error {
     constructor(message: string) {
         super(message);

@@ -14,7 +14,7 @@
 	<div class="container">
 		<div class="card p-4 mb-8">
 			<center class="mb-4"><GithubSolid size="xl"/></center>
-			<h1 class="h5">BriefPulse is an open source project. If you are interested in the source code, <a class="anchor" href="/">click here :)</a></h1>
+			<h1 class="h5">BriefPulse is an open source project. If you are interested in the source code, <a class="anchor" href="https://github.com/briefpulse/briefpulse">click here :)</a></h1>
 		</div>
 		<hr class="!border-dashed" />
 		<div class="card p-4 mb-8 mt-8">

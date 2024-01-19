@@ -1,11 +1,8 @@
 import { HfInference } from '@huggingface/inference';
+import { getAccessToken } from '$lib/utils';
 
 const MAX_TITLE_CHAR_LENGHT = 32;
 
-const getAccessToken = async () => {
-    // const variableValue = process.env.VARIABLE_NAME;
-    return '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';
-}
 
 const setupHuggingFace = async () => {
     const token = await getAccessToken()
@@ -17,14 +14,7 @@ const hf = await setupHuggingFace();
 async function generateSummary(inputText: string) {
     
     const result = await hf.summarization({
-        // model: 'facebook/bart-large-cnn',
         inputs: inputText,
-        parameters: {
-            // max_length: 100,
-
-            // min_length: 0,
-            // max_length: 1024,
-        },
     });
     return result.summary_text;
 };

@@ -25,7 +25,7 @@
 				<a class="btn btn-sm variant-ghost-surface" href="/contact">
 					Contact
 				</a>
-				<a class="btn btn-sm variant-ghost-surface" href="/">
+				<a class="btn btn-sm variant-ghost-surface" href="https://github.com/briefpulse/briefpulse">
 					<span><GithubSolid size="md"/></span>
 					<span>GitHub</span>
 				</a>
@@ -37,13 +37,13 @@
 	<svelte:fragment slot="pageFooter">
 		<AppBar>
 			<svelte:fragment slot=lead>
-				<p>Copyright © 2023 <span class="anchor">Heisenbug</span>. All rights reserved.</p>
+				<p>Copyright © 2023 <a href="https://github.com/briefpulse/briefpulse" class="anchor">Heisenbug</a>. All rights reserved.</p>
 			</svelte:fragment>
 			<svelte:fragment slot=trail>
 				<a href="/">BriefPulse</a>
 				<a href="/about">About</a>
 				<a href="/contact">Contact</a>
-				<a href="/"><GithubSolid /></a>
+				<a href="https://github.com/briefpulse/briefpulse"><GithubSolid /></a>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
