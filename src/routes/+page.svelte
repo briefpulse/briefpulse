@@ -146,9 +146,7 @@
   
       const a = document.createElement("a");
       a.href = url;
-      a.download = `$ {
-        title
-      }.txt`;
+      a.download = `${title}.txt`;
       document.body.appendChild(a);
       a.click();
   
