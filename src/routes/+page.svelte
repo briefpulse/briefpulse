@@ -46,13 +46,13 @@
 	
     let inputWarningText: string | null = null;
     let outputText: string | null = null;
-	let usedInput: string;
+    let usedInput: string;
     let title: string;
-	let feedback: string = '';
+    let feedback: string = '';
 
-	let tabSet: number = 0;
+    let tabSet: number = 0;
 
-	$:hasInputFile = inputFiles?.length > 0;
+    $:hasInputFile = inputFiles?.length > 0;
     $:showInputWarning = inputWarningText !== null;
     $:hasOutput = outputText != null
 	$:hasFeedback = !(feedback === '');
@@ -336,25 +336,25 @@
     .row {
         display: flex;
         align-items: center;
-		justify-content: space-between;
+	justify-content: space-between;
     }
-	.tab-display {
-		display: flex;
+    .tab-display {
+	display: flex;
     	align-items: center;
-		height: 32px;
-	}
-	.card-text {
-		font-size: large;
+	height: 32px;
+     }
+    .card-text {
+	font-size: large;
         margin: 0 32px;
         line-height: 32px
-	}
-	.card-prop {
-		display: flex;
-		margin: 12px 0;
+    }
+    .card-prop {
+	display: flex;
+	margin: 12px 0;
         padding: 16px;
-	}
+    }
     .card-icon {
-		background-color: slateblue;
+	background-color: slateblue;
         border-radius: 16%;
         width: 48px;
         height: 48px;
@@ -362,28 +362,28 @@
         align-items: center;
         justify-content: center;
     }
-	.header-banner {
-		background-image: url('$lib/images/banner.jpg');
-		background-size: cover;
-		background-position: center;
-		text-align: center;
-		margin: 0;
-		padding: 0;
-		display: flex;
+    .header-banner {
+	background-image: url('$lib/images/banner.jpg');
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	display: flex;
         align-items: center;
         justify-content: center;
-		height: 256px;
-	}
-	.banner-title {
-		font-size: 2.5em;
-		margin: 0;
-		color: whitesmoke;
-		font-weight: 700;
+	height: 256px;
+    }
+    .banner-title {
+	font-size: 2.5em;
+	margin: 0;
+	color: whitesmoke;
+	font-weight: 700;
         background-color: darkslateblue;
-		width: 100%;
-		height: 64px;
-		display: flex;
+	width: 100%;
+	height: 64px;
+	display: flex;
     	align-items: center;
     	justify-content: center;
-	}
+    }
 </style>
