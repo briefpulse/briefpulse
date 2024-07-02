@@ -2,10 +2,10 @@
 	import {
         AnnotationSolid,
         BugSolid,
-		ClipboardOutline,
+	ClipboardOutline,
         DownloadOutline,
-		EnvelopeSolid,
-		ExclamationCircleOutline,
+	EnvelopeSolid,
+	ExclamationCircleOutline,
         FileInvoiceSolid,
         PalleteSolid,
         RocketSolid,
@@ -14,7 +14,7 @@
         ThumbsDownOutline,
         ThumbsUpSolid,
         ThumbsUpOutline,
-		UploadOutline,
+	UploadOutline,
     } from 'flowbite-svelte-icons'
 
 	import {
